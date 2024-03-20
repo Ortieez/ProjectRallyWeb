@@ -14,7 +14,9 @@ export default function Leaderboard() {
     fetch("/api/leaderboard")
       .then((response) => response.json())
       .then((data) => {
-        setLeaderboardData(data);
+        if (data.length > 0) {
+          setLeaderboardData(data);
+        }
       });
   }, []);
 
