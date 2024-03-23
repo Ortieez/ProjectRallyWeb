@@ -25,32 +25,52 @@ export default function Slider() {
         <SplideSlide className="flex flex-col items-center">
           <Image
             className="rounded-xl"
-            src="/car_image.png"
+            src="/Car1.png"
             width={500}
             height={400}
             alt="Default Car Image"
           />
-          <span>Audi</span>
+          <span>Carinae</span>
         </SplideSlide>
         <SplideSlide className="flex flex-col items-center">
           <Image
             className="rounded-xl"
-            src="/car_image.png"
+            src="/Car2.png"
             width={500}
             height={400}
             alt="Default Car Image"
           />
-          <span>Audi</span>
+          <span>Supernova</span>
         </SplideSlide>
         <SplideSlide className="flex flex-col items-center">
           <Image
             className="rounded-xl"
-            src="/car_image.png"
+            src="/Car3.png"
             width={500}
             height={400}
             alt="Default Car Image"
           />
-          <span>Audi</span>
+          <span>Mars</span>
+        </SplideSlide>
+        <SplideSlide className="flex flex-col items-center">
+          <Image
+            className="rounded-xl"
+            src="/Car4.png"
+            width={500}
+            height={400}
+            alt="Default Car Image"
+          />
+          <span>Haumeas</span>
+        </SplideSlide>
+        <SplideSlide className="flex flex-col items-center">
+          <Image
+            className="rounded-xl"
+            src="/Car5.png"
+            width={500}
+            height={400}
+            alt="Default Car Image"
+          />
+          <span>Phobos</span>
         </SplideSlide>
       </Splide>
     </div>

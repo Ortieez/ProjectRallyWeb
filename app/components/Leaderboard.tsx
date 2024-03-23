@@ -22,15 +22,15 @@ export default function Leaderboard() {
 
   return (
     <>
-      <div className="w-full flex flex-col items-center mb-10 gap-5">
+      <div className="w-full flex flex-col items-center mb-10 gap-5  mx-5">
         <h2 className="self-center text-3xl">Online Leaderboard</h2>
         <div className="flex justify-center w-full flex-col max-w-xl items-center gap-5">
-          <div className="flex justify-evenly w-full gap-5">
-            <select className="rounded-xl p-2" disabled>
+          <div className="flex justify-evenly w-full max-md:flex-col gap-5">
+            {/* <select className="rounded-xl p-2" disabled>
               <option>Choose a car</option>
-            </select>
+            </select> */}
             <select className="rounded-xl p-2" disabled>
-              <option>Choose a track</option>
+              <option>Overpass Circuit</option>
             </select>
           </div>
           <div className="flex justify-center w-full">
