@@ -53,7 +53,7 @@ async function getLeaderboardData() {
     throw error;
   }
 
-  return data;
+  return data.sort((a: any, b: any) => a.time_driven - b.time_driven);
 }
 
 export { handler as GET };
