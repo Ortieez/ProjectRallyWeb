@@ -9,21 +9,32 @@ export default function Leaderboard() {
       time_driven: 0,
     },
   ]);
+  const [isLoading, setIsLoading] = useState(false);
 
-  useEffect(() => {
+  const fetchData = () => {
+    setIsLoading(true);
     fetch("/api/leaderboard")
       .then((response) => response.json())
       .then((data) => {
         if (data.length > 0) {
           setLeaderboardData(data);
         }
+        setIsLoading(false);
       });
-  }, []);
+  };
+
+  useEffect(fetchData, []); // fetch data when the component mounts
 
   return (
     <>
       <div className="w-full flex flex-col items-center mb-10 gap-5  mx-5">
         <h2 className="self-center text-3xl">Online Leaderboard</h2>
+        <button
+          onClick={fetchData}
+          className="bg-secondary rounded-xl px-4 py-3"
+        >
+          {isLoading ? "Loading..." : "Refresh"}
+        </button>
         <div className="flex justify-center w-full flex-col max-w-xl items-center gap-5">
           <div className="flex justify-evenly w-full max-md:flex-col gap-5">
             {/* <select className="rounded-xl p-2" disabled>
