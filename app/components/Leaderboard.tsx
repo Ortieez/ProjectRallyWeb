@@ -29,12 +29,9 @@ export default function Leaderboard() {
     <>
       <div className="w-full flex flex-col items-center mb-10 gap-5  mx-5">
         <h2 className="self-center text-3xl">Online Leaderboard</h2>
-        <button
-          onClick={fetchData}
-          className="bg-secondary rounded-xl px-4 py-3"
-        >
-          {isLoading ? "Loading..." : "Refresh"}
-        </button>
+        <p className="self-center text-xl">
+          Leaderboard will get updated once the site gets rebuilt
+        </p>
         <div className="flex justify-center w-full flex-col max-w-xl items-center gap-5">
           <div className="flex justify-evenly w-full max-md:flex-col gap-5">
             {/* <select className="rounded-xl p-2" disabled>
