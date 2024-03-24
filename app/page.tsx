@@ -35,7 +35,11 @@ export default function Home() {
             handling.
           </p>
           <button className="rounded-full py-3 px-8 bg-red shadow-none hover:shadow-xl transition-all ">
-            <a href="/download" className="text-2xl">
+            <a
+              href="https://drive.google.com/file/d/1OBVeEJGIPRVAuoRtJI10xiQbQuDDO6c1/view?usp=drive_link"
+              className="text-2xl"
+              target="_blank"
+            >
               Download the game
             </a>
           </button>
